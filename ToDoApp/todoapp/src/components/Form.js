@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AppContext } from './AppContent';
 
@@ -6,6 +6,8 @@ const Form = () => {
 	const [text, setText] = useState('');
 	const [date, setDate] = useState('');
 	const [priority, setPriority] = useState(false);
+
+	const {addTask} = useContext(AppContext);
 
 	const handleChange = e => {
 		const value = e.target.value;
@@ -58,13 +60,7 @@ const Form = () => {
 						checked={priority}
 						onChange={handleChange}
 					/>
-					<AppContext.Consumer>
-			{
-				({addTask}) => (
 					<button onClick={() => handleSubmit(addTask)}>Submit</button>
-				)
-			}
-			</AppContext.Consumer>
 			</div>
 		</>
 	);

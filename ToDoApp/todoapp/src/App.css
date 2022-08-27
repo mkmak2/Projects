@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(191, 208, 221);
+}
+
+.main{
+    position: fixed;
+    left: 50%;
+    top:50%;
+    height: 80vh;
+    width: 35vw;
+    border: 3px solid black;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header{
+    height: 10%;
+    padding: 5px;
+    padding-top: 10px;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px grey solid;
+    
+}
+
+.menu{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu div:hover{
+    background-color: rgb(181, 181, 181);
+}
+
+.menu i{
+    font-size: 50px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.menu i:hover{
+    font-size: 70px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu .form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    height: 300px;
+    width: 250px;
+}
+
+.menu .form:hover{
+    background-color: #fff;
+}
+
+.form input{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form label{
+    margin-bottom: 10px;
+}
+
+.menu .back{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 70px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.back i{
+    font-size: 50px;
+    padding: 0;
+}
+
+.back i:hover{
+    font-size: 50px;
+}
+
+.menu .list{
+    min-height: 400px;
+    width: 400px;
+    border: none;
+}
+
+.menu .list:hover{
+    background-color: #fff;
+}
+
+.list li{
+    list-style: none;
+    font-size: 20px;
+}
+
+.list i{
+    font-size: 20px;
+}
+
+.list p{
+    margin-right:20px ;
+}
+
+.list i:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
